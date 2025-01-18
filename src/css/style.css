@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cabecalho{
+    height: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 0 2rem;
+}
+
+.cabecalho video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.cabecalho p{
+    color: #fff;
+    font-size: 2em;
+}
+
+.cabecalho p:hover{
+    color: #3efb21;
+    border-bottom: 2px solid #30f611;
+    transition: all ease 0.5s;
+}
+
+.nav-cabecalho ul{
+    display: flex;
+    gap: 10px;
+}
+
+.nav-cabecalho ul li a{
+    color: #fff;
+    font-family: "Open Sans", serif;
+    font-size: 1em;
+    border: 2px solid #0e0d0d;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #80ea92,
+    0 0 10px #55e37e,
+    0 0 20px #39cc3c,
+    0 0 30px #44cd2f;
+}
+
+.nav-cabecalho ul li a:hover{
+    box-shadow: 0 0 20px #80ea92,
+    0 0 30px #55e37e,
+    0 0 40px #39cc3c,
+    0 0 50px #44cd2f;
+}
+
+.sobre{
+    height: 90vh;
+    max-height: 56.25rem;
+    background-color: #000000;
+    padding: 50px 0;
+}
+
+.info-sobreMim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.info-sobreMim img{
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid #070707;
+    box-shadow: 0 0 5px #80ea92,
+    0 0 10px #55e37e,
+    0 0 20px #39cc3c,
+    0 0 30px #44cd2f;
+    margin-bottom: 20px;
+}
+
+.info-sobreMim h1{
+    font-size: calc(1em + 1vw);
+    margin-bottom: 10px;
+    font-family: "Open Sans", serif;
+}
+
+.info-sobreMim p{
+    font-size: calc(0.3em + 1vw);
+    margin-bottom: 20px;
+    font-family: "Open Sans", serif;
+}
+
+.info-sobreMim nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.info-sobreMim nav ul li i{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.info-sobreMim ul li i:hover{
+    transition: all ease-in-out 0.5s;
+    transform: scale(1.2, 1.2);
+    color: #30f611;
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow i{
+    font-size: 3rem;
+    color: #30f611;
+    animation: movimento 1s linear infinite;
+}
+
+@keyframes movimento {
+    0%{
+        transform: translatey(0);
+        opacity: 1;
+    }
+    50%{
+        transform: translatey(-20px);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about{
+    height: 90vh;
+    max-height: 56.25rem;
+    background: #000000;
+}
+
+.caixa-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+.caixa-sobre h2{
+    font-size: calc(1em + 1vw);
+    margin-bottom: 20px;
+    font-family: "Open Sans", serif;
+}
+
+.caixa-sobre p{
+    font-size: calc(0.2em + 1vw);
+    max-width: 40em;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "Open Sans", serif;
+}
+
+#habilidades{
+    height: 50vh;
+    max-height: 56.25rem;
+    background: #000000;
+    min-height: 20rem;
+}
+
+.info-habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info-habilidades h3{
+    font-size: calc(0.9em + 1vw);
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Open Sans", serif;
+}
+
+.info-habilidades .info-detalhe{
+    display: flex;
+    gap: 20px;
+}
+
+.info-habilidades .info-detalhe i{
+    font-size: 5em;
+    color: #39cc3c;
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+}
+
+.info-detalhe p{
+    color: #3efb21;
+    text-align: center;
+    font-family: "Open Sans", serif;
+}
+
+.detalhe-habilidade{
+    transition: all ease 0.5s;
+}
+
+.info-habilidades .detalhe-habilidade:hover{
+    transform: scale(1.2, 1.2);
+}
+
+#meus-projetos{
+    height: 90vh;
+    max-height: 56.25rem;
+    background: #000000;
+}
+
+.conteudo-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.conteudo-projetos h3{
+    color: #fff;
+    font-size: calc(0.9em + 1vw);
+    font-family: "Open Sans", serif;
+}
+
+.lista-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    max-width: 90em;
+}
+
+ .lista-projetos .projeto{
+    position: relative;
+} 
+
+.projeto img{
+    width: 30em;
+    height: 20em;
+    transition: filter 0.3s ease;
+    box-shadow: 0 0 5px #80ea92,
+    0 0 10px #55e37e,
+    0 0 20px #39cc3c,
+    0 0 30px #44cd2f;
+}
+
+.info-projeto{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    color: #fff;
+    opacity: 0;
+    /* transition: opacity 0.3 ease; */
+}
+
+.info-projeto p{
+    font-family: "Lato", serif;
+    margin:0 1em;
+    text-align: center;
+}
+
+.projeto img:hover{
+    filter: brightness(30%);
+}
+
+.projeto img:hover ~ .info-projeto{
+    opacity: 1;
+}
+
+.projeto:hover .info-projeto {
+    opacity: 1; 
+    pointer-events: auto; 
+} 
+
+.btn-projetos{
+    background: #44cd2f;
+    color: #fff;
+    border: none;
+    padding: 0.5em;
+    font-size: calc(0.1em + 1vw);
+    cursor: pointer;
+    border-radius: 1em;
+    transition: all ease-in 0.4s;
+    font-family: "Open Sans", serif;
+}
+
+.btn-projetos:hover{
+    background: #000000;
+    box-shadow: 0 0 5px #80ea92,
+    0 0 10px #55e37e,
+    0 0 20px #39cc3c,
+    0 0 30px #44cd2f;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 15em;
+    color: #fff;
+}
+
+.rodape video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.info-rodape h5{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-family: "Open Sans", serif;
+}
+
+.info-rodape nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-rodape nav ul li i{
+    font-size: 3em;
+    color: #fff;
+}
