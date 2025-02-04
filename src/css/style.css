@@ -97,6 +97,7 @@ html{
 
 .info-sobreMim p{
     font-size: calc(0.3em + 1vw);
+    height: 2em;
     margin-bottom: 20px;
     font-family: "Open Sans", serif;
 }
