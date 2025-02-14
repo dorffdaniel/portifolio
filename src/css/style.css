@@ -8,6 +8,7 @@ html{
 
 .cabecalho{
     height: 10em;
+    background-image: url(../imagens/background.png);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,17 +25,6 @@ html{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-}
-
-.cabecalho p{
-    color: #fff;
-    font-size: 2em;
-}
-
-.cabecalho p:hover{
-    color: #3efb21;
-    border-bottom: 2px solid #30f611;
-    transition: all ease 0.5s;
 }
 
 .nav-cabecalho ul{
@@ -316,10 +306,11 @@ html{
 
 .rodape{
     display: flex;
+    background-image: url(../imagens/background.png);
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 15em;
+    height: 12em;
     color: #fff;
 }
 
