@@ -19,3 +19,4 @@ function efeitoPalavra(){
 }
 
 setInterval(efeitoPalavra, 500);
+

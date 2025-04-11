@@ -1,0 +1,52 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .hamburguer{
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .nav-list{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background: #464141;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+        z-index: 3;
+    }
+
+
+     .nav-list li a{
+        font-size: 1em;
+        padding: 2px;
+    }
+
+    .info-sobreMim img{
+        width: 200px;
+    }
+
+    .info-habilidades .info-detalhe i{
+        font-size: 2.1em;
+        align-content: center;
+    }
+
+    .info-detalhe p{
+        font-size: 0.7em;
+    }
+
+    .projeto img{
+        width: 15em;
+        height: 10em;
+    }
+
+    .info-rodape h5{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .cardLinguagens img{
+        height: 2em;
+    }
+}
