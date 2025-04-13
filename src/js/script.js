@@ -20,3 +20,12 @@ function efeitoPalavra(){
 
 setInterval(efeitoPalavra, 500);
 
+
+
+let hamburguer = document.querySelector('.hamburguer');
+let nav = document.querySelector('.nav-list')
+
+hamburguer.addEventListener('click', ()=>{
+    nav.classList.toggle('ativado')
+    hamburguer.classList.toggle('ativa')
+})

@@ -1,25 +1,51 @@
 @media (min-width: 320px) and (max-width: 480px) {
+    
     .hamburguer{
         display: block;
         cursor: pointer;
+        position: fixed;
         z-index: 5;
     }
 
-    .nav-list{
+    .hamburguer.ativa .linha:nth-child(1){
+        transform: rotate(45deg);
         position: absolute;
-        left: 0;
-        top: 0;
-        height: 100vh;
-        background: #464141;
-        width: 50%;
-        flex-direction: column;
-        justify-content: space-around;
-        z-index: 3;
+        transition: all ease 1s;
+        top: 50%;
     }
 
+    .hamburguer.ativa .linha:nth-child(2){
+        opacity: 0;
+    }
 
+    .hamburguer.ativa .linha:nth-child(3){
+        transform: rotate(-45deg);
+        position: absolute;
+        transition: all ease 1s;
+        top: 50%;
+    }
+
+    .nav-list{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 80vh;
+        background: #000000;
+        border-radius: 0 1em 1em 0;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 2;
+        display: none;
+    }
+
+    .nav-list.ativado{
+        display: flex;
+    }
+    
      .nav-list li a{
-        font-size: 1em;
+        font-size: 0.7em;
         padding: 2px;
     }
 

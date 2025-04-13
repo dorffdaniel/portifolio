@@ -79,8 +79,7 @@ html{
     0 0 20px #39cc3c,
     0 0 30px #44cd2f;
     margin-bottom: 20px;
-    z-index: 1;
-    position: relative;
+    z-index: auto;
 }
 
 .info-sobreMim h1{
@@ -329,3 +328,4 @@ html{
 .amarela{
     color: #e8ec0a;
 }
+
