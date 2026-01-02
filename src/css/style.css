@@ -2,11 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.cabecalho{
+.cabecalho {
     height: 10em;
     background-image: url(../imagens/background.png);
     display: flex;
@@ -17,24 +17,24 @@ html{
     padding: 0 2rem;
 }
 
-.hamburguer{
-    display: block;
+.hamburguer {
+    display: none;
     cursor: pointer;
 }
 
-.hamburguer .linha{
+.hamburguer .linha {
     width: 2em;
     height: 0.2em;
     margin: 0.2em;
     background: #ffffff;
 }
 
- .nav-list{
+.nav-list {
     display: flex;
     gap: 10px;
 }
 
- .nav-list li a{
+.nav-list li a {
     color: #fff;
     font-family: "Open Sans", serif;
     font-size: 1em;
@@ -42,26 +42,26 @@ html{
     padding: 8px;
     border-radius: 10px;
     box-shadow: 0 0 5px #80ea92,
-    0 0 10px #55e37e,
-    0 0 20px #39cc3c,
-    0 0 30px #44cd2f;
+        0 0 10px #55e37e,
+        0 0 20px #39cc3c,
+        0 0 30px #44cd2f;
 }
 
-.nav-list li a:hover{
+.nav-list li a:hover {
     box-shadow: 0 0 20px #80ea92,
-    0 0 30px #55e37e,
-    0 0 40px #39cc3c,
-    0 0 50px #44cd2f;
+        0 0 30px #55e37e,
+        0 0 40px #39cc3c,
+        0 0 50px #44cd2f;
 }
 
-.sobre{
+.sobre {
     height: 90vh;
     max-height: 56.25rem;
     background-color: #000000;
     padding: 50px 0;
 }
 
-.info-sobreMim{
+.info-sobreMim {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,81 +70,83 @@ html{
     margin-bottom: 50px;
 }
 
-.info-sobreMim img{
+.info-sobreMim img {
     width: 350px;
     border-radius: 50%;
     border: 2px solid #070707;
     box-shadow: 0 0 5px #80ea92,
-    0 0 10px #55e37e,
-    0 0 20px #39cc3c,
-    0 0 30px #44cd2f;
+        0 0 10px #55e37e,
+        0 0 20px #39cc3c,
+        0 0 30px #44cd2f;
     margin-bottom: 20px;
     z-index: auto;
 }
 
-.info-sobreMim h1{
+.info-sobreMim h1 {
     font-size: calc(1em + 1vw);
     margin-bottom: 10px;
     font-family: "Open Sans", serif;
 }
 
-.info-sobreMim p{
+.info-sobreMim p {
     font-size: calc(0.3em + 1vw);
     height: 2em;
     margin-bottom: 20px;
     font-family: "Open Sans", serif;
 }
 
-.info-sobreMim nav ul{
+.info-sobreMim nav ul {
     display: flex;
     gap: 30px;
 }
 
-.info-sobreMim nav ul li i{
+.info-sobreMim nav ul li i {
     font-size: 2em;
     cursor: pointer;
 }
 
-.info-sobreMim ul li i:hover{
+.info-sobreMim ul li i:hover {
     transition: all ease-in-out 0.5s;
     transform: scale(1.2, 1.2);
     color: #30f611;
 }
 
-.arrow{
+.arrow {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.arrow i{
+.arrow i {
     font-size: 3rem;
     color: #30f611;
     animation: movimento 1s linear infinite;
 }
 
 @keyframes movimento {
-    0%{
+    0% {
         transform: translatey(0);
         opacity: 1;
     }
-    50%{
+
+    50% {
         transform: translatey(-20px);
         opacity: 0.5;
     }
-    100%{
+
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-.about{
+.about {
     height: 90vh;
     max-height: 56.25rem;
     background: #000000;
 }
 
-.caixa-sobre{
+.caixa-sobre {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -153,13 +155,13 @@ html{
     color: #fff;
 }
 
-.caixa-sobre h2{
+.caixa-sobre h2 {
     font-size: calc(1em + 1vw);
     margin-bottom: 20px;
     font-family: "Open Sans", serif;
 }
 
-.caixa-sobre p{
+.caixa-sobre p {
     font-size: calc(0.2em + 1vw);
     max-width: 40em;
     letter-spacing: 2px;
@@ -167,14 +169,14 @@ html{
     font-family: "Open Sans", serif;
 }
 
-#habilidades{
+#habilidades {
     height: 50vh;
     max-height: 56.25rem;
     background: #000000;
     min-height: 20rem;
 }
 
-.info-habilidades{
+.info-habilidades {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,46 +184,46 @@ html{
     height: 100%;
 }
 
-.info-habilidades h3{
+.info-habilidades h3 {
     font-size: calc(0.9em + 1vw);
     margin-bottom: 20px;
     color: #fff;
     font-family: "Open Sans", serif;
 }
 
-.info-habilidades .info-detalhe{
+.info-habilidades .info-detalhe {
     display: flex;
     gap: 20px;
 }
 
-.info-habilidades .info-detalhe i{
+.info-habilidades .info-detalhe i {
     font-size: 5em;
     color: #39cc3c;
     cursor: pointer;
     transition: all ease-in 0.3s;
 }
 
-.info-detalhe p{
+.info-detalhe p {
     color: #3efb21;
     text-align: center;
     font-family: "Open Sans", serif;
 }
 
-.detalhe-habilidade{
+.detalhe-habilidade {
     transition: all ease 0.5s;
 }
 
-.info-habilidades .detalhe-habilidade:hover{
+.info-habilidades .detalhe-habilidade:hover {
     transform: scale(1.2, 1.2);
 }
 
-#meus-projetos{
+#meus-projetos {
     height: 100vh;
     max-height: 56.25rem;
     background: #000000;
 }
 
-.conteudo-projetos{
+.conteudo-projetos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,13 +232,13 @@ html{
     gap: 2em;
 }
 
-.conteudo-projetos h3{
+.conteudo-projetos h3 {
     color: #fff;
     font-size: calc(0.9em + 1vw);
     font-family: "Open Sans", serif;
 }
 
-.lista-projetos{
+.lista-projetos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,7 +259,7 @@ html{
     border-radius: 1em;
 } */
 
-.imgs-cards{
+.imgs-cards {
     width: 34em;
     height: 14.8em;
     padding: .3em;
@@ -272,30 +274,31 @@ html{
     height: 15em;
     perspective: 1000px;
     font-family: sans-serif;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 1.5em;
     font-weight: 900;
     text-align: center;
     margin: 0;
-  }
-  
-  .flip-card-inner {
+}
+
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
+}
+
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -307,24 +310,24 @@ html{
     backface-visibility: hidden;
     border: 1px solid rgb(45, 197, 15);
     border-radius: 1rem;
-  }
-  
-  .flip-card-front {
+}
+
+.flip-card-front {
     background: linear-gradient(120deg, rgb(19, 194, 13) 60%, rgb(2, 59, 28) 88%,
-       rgb(45, 196, 15) 40%, rgba(8, 8, 8, 0.603) 48%);
+            rgb(45, 196, 15) 40%, rgba(8, 8, 8, 0.603) 48%);
     color: rgb(7, 53, 15);
-  }
-  
-  .flip-card-back {
+}
+
+.flip-card-back {
     background: linear-gradient(120deg, rgb(19, 194, 13) 60%, rgb(2, 59, 28) 88%,
-    rgb(45, 196, 15) 40%, rgba(8, 8, 8, 0.603) 48%);
- color: rgb(7, 53, 15);
+            rgb(45, 196, 15) 40%, rgba(8, 8, 8, 0.603) 48%);
+    color: rgb(7, 53, 15);
     transform: rotateY(180deg);
-  }
+}
 
- /*  fim do efeito card */
+/*  fim do efeito card */
 
-.btn-projetos{
+.btn-projetos {
     background: #44cd2f;
     color: #fff;
     border: none;
@@ -336,63 +339,70 @@ html{
     font-family: "Open Sans", serif;
 }
 
-.btn-projetos:hover{
+.btn-projetos:hover {
     background: #000000;
     box-shadow: 0 0 5px #80ea92,
-    0 0 10px #55e37e,
-    0 0 20px #39cc3c,
-    0 0 30px #44cd2f;
+        0 0 10px #55e37e,
+        0 0 20px #39cc3c,
+        0 0 30px #44cd2f;
 }
 
-.rodape{
+.rodape {
     display: flex;
     background-image: url(../imagens/background.png);
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 12em;
+    height: 13em;
     color: #fff;
 }
 
-.info-rodape h5{
+.info-rodape h5 {
     font-size: 2em;
     margin-bottom: 0.5em;
     font-family: "Open Sans", serif;
 }
 
-.conteudoLinguagens{
+.info-rodape p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    font-family: "Open Sans", serif;
+}
+
+.conteudoLinguagens {
     width: 100%;
     overflow-x: hidden;
     white-space: nowrap;
 }
 
-.cardLinguagens{
+.cardLinguagens {
     display: flex;
     animation: scroll 10s linear infinite;
     filter: brightness(40%);
     transition: all ease 1s;
 }
 
-.cardLinguagens:hover{
+.cardLinguagens:hover {
     filter: brightness(100%);
     transition: all ease 1s;
 }
 
-.cardLinguagens img{
-    height: 5em;
+.cardLinguagens img {
+    height: 4em;
     margin: 1em;
     border-radius: 1em;
 }
 
 @keyframes scroll {
-    0%{
+    0% {
         transform: translate(100%);
-    }100%{
+    }
+
+    100% {
         transform: translate(-100%);
     }
 }
 
-.amarela{
+.amarela {
     color: #e8ec0a;
 }
-
