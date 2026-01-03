@@ -169,6 +169,25 @@ html {
     font-family: "Open Sans", serif;
 }
 
+.caixa-sobre button {
+    margin-top: 1em;
+    padding: .5em;
+    background: #21960f;
+    color: #fff;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: all ease .7s;
+}
+
+.caixa-sobre button:hover {
+    background: #000000;
+    box-shadow: 0 0 5px #80ea92,
+        0 0 10px #55e37e,
+        0 0 20px #39cc3c,
+        0 0 30px #44cd2f;
+}
+
 #habilidades {
     height: 50vh;
     max-height: 56.25rem;

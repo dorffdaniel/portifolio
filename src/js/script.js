@@ -1,3 +1,4 @@
+
 let areaProfissao = document.querySelector('.areaProfissao');
 
 let valor = "Desenvolvedor Front-end";
@@ -56,6 +57,13 @@ function calcularIdade(dataNasc) {
 
 }
 
+function baixarCurriculo() {
+    const link = document.createElement("a");
+
+    link.href = "./src/Daniel-Alves.pdf";
+    link.download = "meu_Curriculo.pdf";
+    link.click();
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
