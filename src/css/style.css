@@ -229,7 +229,14 @@ html {
 }
 
 .detalhe-habilidade {
+    display: grid;
+    place-items: center;
     transition: all ease 0.5s;
+}
+
+.detalhe-habilidade .niveis {
+    margin-top: .5rem;
+    color: #80ea92;
 }
 
 .info-habilidades .detalhe-habilidade:hover {
