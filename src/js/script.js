@@ -1,7 +1,7 @@
 
 let areaProfissao = document.querySelector('.areaProfissao');
 
-let valor = "Desenvolvedor Front-end";
+let valor = "Desenvolvedor Full stack";
 
 let index = 0;
 
