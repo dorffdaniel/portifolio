@@ -1,31 +1,31 @@
 @media (min-width: 320px) and (max-width: 480px) {
-    
-    .hamburguer{
+
+    .hamburguer {
         display: block;
         cursor: pointer;
         position: fixed;
         z-index: 5;
     }
 
-    .hamburguer.ativa .linha:nth-child(1){
+    .hamburguer.ativa .linha:nth-child(1) {
         transform: rotate(45deg);
         position: absolute;
         transition: all ease 1s;
         top: 50%;
     }
 
-    .hamburguer.ativa .linha:nth-child(2){
+    .hamburguer.ativa .linha:nth-child(2) {
         opacity: 0;
     }
 
-    .hamburguer.ativa .linha:nth-child(3){
+    .hamburguer.ativa .linha:nth-child(3) {
         transform: rotate(-45deg);
         position: absolute;
         transition: all ease 1s;
         top: 50%;
     }
 
-    .nav-list{
+    .nav-list {
         position: fixed;
         left: 0;
         top: 0;
@@ -40,39 +40,100 @@
         display: none;
     }
 
-    .nav-list.ativado{
+    .nav-list.ativado {
         display: flex;
     }
-    
-     .nav-list li a{
+
+    .nav-list li a {
         font-size: 0.7em;
         padding: 2px;
     }
 
-    .info-sobreMim img{
-        width: 200px;
+    .sobre {
+        height: 70vh;
     }
 
-    .info-habilidades .info-detalhe i{
-        font-size: 2.1em;
+    .info-sobreMim img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .info-sobreMim .areaProfissao {
+        font-size: 1rem;
+    }
+
+    .about {
+        height: 60vh;
+    }
+
+    .caixa-sobre p {
+        font-size: .9rem;
+        padding: .5rem 1rem;
+    }
+
+    /* Projetos */
+    .info-habilidades .info-detalhe .separador {
+        display: flex;
+        justify-content: center;
+        gap: 1.1rem;
+        margin: 1.2rem;
+    }
+
+    .info-habilidades .info-detalhe i {
+        font-size: 1.8em;
         align-content: center;
     }
 
-    .info-detalhe p{
+    .info-habilidades .info-detalhe .niveis {
+        display: none;
+    }
+
+    .info-detalhe p {
         font-size: 0.7em;
     }
 
-    .projeto img{
-        width: 15em;
+    /* #meus-projetos {
+        padding: 1rem 0;
+    } */
+
+    .cardProjetos {
         height: 10em;
+        width: 18rem;
     }
 
-    .info-rodape h5{
+    .cardProjetos img {
+        display: none;
+    }
+
+    .cardProjetos .title {
+        font-size: 1rem;
+    }
+
+    .cardProjetos p {
+        font-size: .9rem;
+    }
+
+
+    .btn-projetos {
+        font-size: .7rem;
+    }
+
+
+    .rodape {
+        height: 20vh;
+    }
+
+    .info-rodape h5 {
         font-size: 1em;
         text-align: center;
     }
 
-    .cardLinguagens img{
-        height: 2em;
+    .info-rodape p {
+        font-size: .9rem;
+        margin-top: 1rem;
+    }
+
+    .cardLinguagens img {
+        height: 2.2rem;
     }
 }

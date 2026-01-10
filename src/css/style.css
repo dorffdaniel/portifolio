@@ -211,9 +211,11 @@ html {
     font-family: "Open Sans", serif;
 }
 
-.info-habilidades .info-detalhe {
+.info-habilidades .info-detalhe .separador {
     display: flex;
+    justify-content: center;
     gap: 20px;
+    margin: 1.2rem;
 }
 
 .info-habilidades .info-detalhe i {
@@ -271,7 +273,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     gap: 2em;
-    max-width: 90em;
+    max-width: 100em;
 }
 
 /* inicio cards pequenos ref aos projetos  */
