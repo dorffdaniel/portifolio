@@ -92,12 +92,8 @@
         font-size: 0.7em;
     }
 
-    /* #meus-projetos {
-        padding: 1rem 0;
-    } */
-
     .cardProjetos {
-        height: 10em;
+        height: 9.5em;
         width: 18rem;
     }
 
@@ -116,6 +112,7 @@
 
     .btn-projetos {
         font-size: .7rem;
+
     }
 
 
@@ -136,4 +133,108 @@
     .cardLinguagens img {
         height: 2.2rem;
     }
+}
+
+@media (min-width: 481px) and (max-width: 609px) {
+
+    .info-sobreMim img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .info-sobreMim .areaProfissao {
+        font-size: 1rem;
+    }
+
+    .caixa-sobre p {
+        font-size: .9rem;
+        padding: .5rem 1rem;
+    }
+
+    /* Projetos */
+    .info-habilidades .info-detalhe .separador {
+        display: flex;
+        justify-content: center;
+        gap: 1.1rem;
+        margin: 1.2rem;
+    }
+
+    .info-habilidades .info-detalhe i {
+        font-size: 2.8em;
+        align-content: center;
+    }
+
+    .info-habilidades .info-detalhe .niveis {
+        display: none;
+    }
+
+    .cardProjetos {
+        height: 9.8em;
+        width: 18rem;
+    }
+
+    .cardProjetos img {
+        display: none;
+    }
+
+    .cardProjetos .title {
+        font-size: 1rem;
+    }
+
+    .cardProjetos p {
+        font-size: .9rem;
+    }
+
+    .btn-projetos {
+        font-size: .7rem;
+
+    }
+
+    .rodape {
+        height: 20vh;
+    }
+
+    .info-rodape h5 {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .info-rodape p {
+        font-size: .9rem;
+        margin-top: 1rem;
+    }
+
+    .cardLinguagens img {
+        height: 2.2rem;
+    }
+
+
+}
+
+@media (min-width:610px) and (max-width: 760px) {
+
+    .caixa-sobre p {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+    }
+
+    .info-habilidades .info-detalhe i {
+        font-size: 3em;
+    }
+
+    .cardProjetos {
+        height: 9.8em;
+        width: 17rem;
+        text-align: center;
+    }
+
+    .cardProjetos img {
+        display: none;
+    }
+
+
+    .btn-projetos {
+        font-size: .9rem;
+    }
+
 }
